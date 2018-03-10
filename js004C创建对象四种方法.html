@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js004练习</title>
+</head>
+<body>
+	
+	<script>
+		// 字面量对象
+		var person = {
+			name: '张三',
+			age: 23,
+			sex: "男"
+		}
+		console.log(person);
+		// new Object() 创建对象
+		var person = new Object();
+		person.name = "张三";
+		person.age = 23;
+		person.sex = '男';
+		console.log(person);
+		// 工厂函数创建对象
+		function people() {
+			var person = new Object();
+			person.name = "张三";
+			person.age = 23;
+			person.sex = '男';
+			return person;
+		}
+		console.log(people());
+		// 构造函数
+		function Person(name,age,sex) {
+			this.name = name;
+			this.age = age;
+			this.sex = sex;
+		}
+		var people = new Person('张三',23,'男');
+		console.log(people);
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+</body>
+</html>
